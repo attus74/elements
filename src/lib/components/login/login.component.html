@@ -1,0 +1,31 @@
+<h1 mat-dialog-title i18n>Bejelenentkezés</h1>
+<div mat-dialog-content>
+  <form [formGroup]="loginForm">
+    <mat-form-field>
+      <input type="text" formControlName="username" placeholder="Felhasználónév" i18n-placeholder
+             required matInput>
+      <mat-error>
+        <span *ngIf="loginForm.get('username').touched && !loginForm.get('username').valid" i18n>
+          A felhasználónevet meg kell adni
+        </span>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input type="password" formControlName="password" placeholder="Jelszó" i18n-placeholder
+             required matInput>
+      <mat-error>
+        <span *ngIf="loginForm.get('password').touched && !loginForm.get('password').valid" i18n>
+          A jelszót meg kell adni
+        </span>
+      </mat-error>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close="0" i18n>
+    Mégse
+  </button>
+  <button mat-button [mat-dialog-close]="loginData" [disabled]="disabled" i18n>
+    Bejelentkezés
+  </button>
+</div>
