@@ -19,4 +19,4 @@ import { AttusElementsLoginDialogComponent } from './components/login/login.comp
     AttusElementsLoginDialogComponent
   ]
 })
-export class ElementsModule { }
+export class AttusElementsModule { }

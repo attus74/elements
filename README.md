@@ -2,23 +2,28 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
-## Code scaffolding
+[![GitHub release](https://img.shields.io/github/release/attus74/elements.svg)](https://GitHub.com/attus74/elements/releases/)
 
-Run `ng generate component component-name --project elements` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project elements`.
-> Note: Don't forget to add `--project elements` or else it will be added to the default project in your `angular.json` file. 
+## In module.ts
 
-## Build
+```typescript
+import {AttusElementsModule} from '@attus/elements';
 
-Run `ng build elements` to build the project. The build artifacts will be stored in the `dist/` directory.
+@NgModule({
+  imports: [
+    AttusElementsModule,
+  ],
+})
+```
 
-## Publishing
+## Login Popup
 
-After building your library with `ng build elements`, go to the dist folder `cd dist/elements` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test elements` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+import {MatDialog} from '@angular/material/dialog';
+import {AttusLoginDialogComponent} from '@attus/elements';
+```
+```
+this.dialog.open(AttusElementsLoginDialogComponent).afterClosed().subscribe((response: any) => {
+  console.debug(response.username, response.password);
+});
+```
