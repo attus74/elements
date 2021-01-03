@@ -1,0 +1,16 @@
+<div mat-dialog-content>
+  <p class="mat-title">{{ data.question }}</p>
+  <p class="mat-subheading-2" *ngIf="data.hint !== undefined && data.hint !== ''">
+    {{ data.hint }}
+  </p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close="0">
+    <mat-icon>close</mat-icon>
+    {{ data.cancel }}
+  </button>
+  <button mat-button mat-dialog-close="1">
+    <mat-icon>check</mat-icon>
+    {{ data.ok }}
+  </button>
+</div>

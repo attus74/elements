@@ -8,10 +8,12 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 
 import { AttusElementsLoginDialogComponent } from './components/login/login.component';
+import { ConfirmComponent } from './components/confirm/confirm.component';
 
 @NgModule({
   declarations: [
-    AttusElementsLoginDialogComponent
+    AttusElementsLoginDialogComponent,
+    ConfirmComponent
   ],
   imports: [
     CommonModule,

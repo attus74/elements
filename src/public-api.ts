@@ -4,3 +4,4 @@
 
 export * from './lib/elements.module';
 export * from './lib/components/login/login.component';
+export * from './lib/components/confirm/confirm.component';
