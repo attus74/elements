@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import {MatInputModule} from '@angular/material/input';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button';
 
 import { AttusElementsLoginDialogComponent } from './components/login/login.component';
 
@@ -17,6 +18,7 @@ import { AttusElementsLoginDialogComponent } from './components/login/login.comp
     ReactiveFormsModule,
     MatInputModule,
     MatDialogModule,
+    MatButtonModule,
   ],
   exports: [
     AttusElementsLoginDialogComponent
