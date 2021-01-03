@@ -18,9 +18,9 @@ export interface ConfirmQuestion {
 @Component({
   templateUrl: './confirm.component.html',
 })
-export class AttusConfirmDialogComponent {
+export class AttusElementsConfirmDialogComponent {
     
-  constructor(public dialogRef: MatDialogRef<AttusConfirmDialogComponent>,
+  constructor(public dialogRef: MatDialogRef<AttusElementsConfirmDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: ConfirmQuestion) {
     if (data.cancel === undefined) {
       data.cancel = 'Cancel';
