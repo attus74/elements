@@ -18,11 +18,11 @@ import {AttusElementsModule} from '@attus/elements';
 
 ## Login Popup
 
-```
+```typescript
 import {MatDialog} from '@angular/material/dialog';
 import {AttusLoginDialogComponent} from '@attus/elements';
 ```
-```
+```typescript
 this.dialog.open(AttusElementsLoginDialogComponent).afterClosed().subscribe((response: any) => {
   console.debug(response.username, response.password);
 });
