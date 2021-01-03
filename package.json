@@ -7,5 +7,23 @@
   },
   "dependencies": {
     "tslib": "^2.0.0"
-  }
+  },
+  "description": "Angular Material Elements",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/attus74/elements.git"
+  },
+  "keywords": [
+    "Angular",
+    "Login"
+  ],
+  "author": {
+    "name": "Attila Németh",
+    "email": "attus@germanicus.hu"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/attus74/elements/issues"
+  },
+  "homepage": "https://github.com/attus74/elements#readme"
 }
