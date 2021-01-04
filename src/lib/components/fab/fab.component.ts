@@ -2,9 +2,9 @@
  * @file Floating Action Button
  * 
  * @author Attila Németh
- * @date 04.01.2021
+ * @date 04.01.2021 
  */
-
+ 
 import {Component, Input, HostBinding} from '@angular/core';
 
 import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';

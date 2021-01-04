@@ -27,7 +27,9 @@ import { AttusElementsFabComponent } from './components/fab/fab.component';
     MatRippleModule,
   ],
   exports: [
-    AttusElementsLoginDialogComponent
+    AttusElementsLoginDialogComponent,
+    AttusElementsConfirmDialogComponent,
+    AttusElementsFabComponent,
   ]
 })
 export class AttusElementsModule { }

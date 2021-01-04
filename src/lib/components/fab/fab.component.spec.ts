@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FabComponent } from './fab.component';
+import { AttusElementsFabComponent } from './fab.component';
 
-describe('FabComponent', () => {
-  let component: FabComponent;
-  let fixture: ComponentFixture<FabComponent>;
+describe('AttusElementsFabComponent', () => {
+  let component: AttusElementsFabComponent;
+  let fixture: ComponentFixture<AttusElementsFabComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FabComponent ]
+      declarations: [ AttusElementsFabComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FabComponent);
+    fixture = TestBed.createComponent(AttusElementsFabComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
