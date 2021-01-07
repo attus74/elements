@@ -20,7 +20,7 @@ import {AttusElementsModule} from '@attus/elements';
 
 ```typescript
 import {MatDialog} from '@angular/material/dialog';
-import {AttusLoginDialogComponent} from '@attus/elements';
+import {AttusElementsLoginDialogComponent} from '@attus/elements';
 ```
 ```typescript
 this.dialog.open(AttusElementsLoginDialogComponent).afterClosed().subscribe((response: any) => {

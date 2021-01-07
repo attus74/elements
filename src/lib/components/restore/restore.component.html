@@ -1,0 +1,25 @@
+<h1 mat-dialog-title i18n>New  Password</h1>
+<div mat-dialog-content>
+  <form [formGroup] = "restoreForm">
+    <mat-form-field appearance="fill">
+      <mat-label i18n>Password</mat-label>
+      <input matInput type="password" formControlName="password1" required>
+      <mat-error *ngIf="restoreForm.get('password1').invalid && restoreForm.get('password1').touched" i18n>
+        Password is required
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label i18n>Repeat password</mat-label>
+      <input matInput type="password" formControlName="password2" required>
+      <mat-error *ngIf="restoreForm.get('password2').invalid && restoreForm.get('password2').touched" i18n>
+        Password is required
+      </mat-error>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close="0" color="primary" i18n>Cancel</button>
+  <button mat-button [mat-dialog-close]="passwords" color="primary" [disabled]="!restoreForm.valid" i18n>
+    Submit
+  </button>
+</div>

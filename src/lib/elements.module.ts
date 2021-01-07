@@ -11,12 +11,14 @@ import {MatRippleModule} from '@angular/material/core';
 import { AttusElementsLoginDialogComponent } from './components/login/login.component';
 import { AttusElementsConfirmDialogComponent } from './components/confirm/confirm.component';
 import { AttusElementsFabComponent } from './components/fab/fab.component';
+import { AttusElementsRestoreComponent } from './components/restore/restore.component';
 
 @NgModule({
   declarations: [
     AttusElementsLoginDialogComponent,
     AttusElementsConfirmDialogComponent,
     AttusElementsFabComponent,
+    AttusElementsRestoreComponent,
   ],
   imports: [
     CommonModule,
@@ -30,6 +32,7 @@ import { AttusElementsFabComponent } from './components/fab/fab.component';
     AttusElementsLoginDialogComponent,
     AttusElementsConfirmDialogComponent,
     AttusElementsFabComponent,
+    AttusElementsRestoreComponent,
   ]
 })
 export class AttusElementsModule { }
