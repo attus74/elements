@@ -55,7 +55,7 @@ export class AttusElementsRestoreComponent implements OnInit {
 }
  
 @Injectable({ providedIn: 'root' })
-class PasswordCompareValidator {
+export class PasswordCompareValidator {
   public passWordCompare(): ValidatorFn {
     return (formGroup: FormGroup) => {
       if (formGroup.get('password1').value !== formGroup.get('password2').value) {
