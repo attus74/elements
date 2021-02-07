@@ -7,6 +7,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import {MatRippleModule} from '@angular/material/core';
+import {MatIconModule} from '@angular/material/icon';
 
 import { AttusElementsLoginDialogComponent } from './components/login/login.component';
 import { AttusElementsConfirmDialogComponent } from './components/confirm/confirm.component';
@@ -27,6 +28,7 @@ import { AttusElementsRestoreComponent } from './components/restore/restore.comp
     MatDialogModule,
     MatButtonModule,
     MatRippleModule,
+    MatIconModule,
   ],
   exports: [
     AttusElementsLoginDialogComponent,
